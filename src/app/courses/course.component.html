@@ -29,9 +29,14 @@
       <td>{{ course.releaseDate | date: "dd/MM/yyyy" }}</td>
       <td><app-star [rating]="course.rating"></app-star></td>
       <td>
-        <a [routerLink]="['/courses/info', course.id]" class="btn btn-primary"
+        <a
+          [routerLink]="['/courses/info', course.id]"
+          class="btn btn-primary mr-2"
           >Edit</a
         >
+        <button (click)="deleteById(course.id)" class="btn btn-danger">
+          Delete
+        </button>
       </td>
     </tr>
   </tbody>
