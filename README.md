@@ -1,1 +1,1 @@
-Projeto para melhorar os conceitos em angular
+Projeto para melhorar os conceitos em angular.
